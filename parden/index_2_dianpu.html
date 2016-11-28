@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index_2_dianpu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">< 返回</a>
+            <h3>50家店铺</h3>
+            <img src="imgs/more.jpg" alt="">
+        </div>
+        <div class="top">
+            <dl>
+                <dt><img src="imgs/touxiang.jpg" alt=""></dt>
+                <dd>小问为您找到50家店铺，有您喜欢的吗？</dd>
+            </dl>
+        </div>
+        <div class="box2">
+            <ul class="two">
+                <li>智能</li>
+                <li class="hightlight">评分</li>
+                <li>送达时间</li>
+                <li>起送价</li>
+                <li id="none">配送费</li>
+            </ul>
+        </div>
+        <div class="content2">
+            <div class="box1">
+                <dl>
+                    <dt><img src="imgs/xishaoye.jpg" alt=""></dt>
+                    <dd>
+                        <h3><a href="index_3_xishaoye.html">西少爷肉夹馍</a></h3>
+                        <i>★★★★★</i>
+                        <b>月售147份</b>
+                        <ul>
+                            <li>起送费￥20</li>
+                            <li>配送费￥5</li>
+                            <li>预计30min送达</li>
+                        </ul>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="box1">
+                <dl>
+                    <dt><img src="imgs/tangcheng.jpg" alt=""></dt>
+                    <dd>
+                        <h3>汤城小厨</h3>
+                        <i>★★★★★</i>
+                        <b>月售147份</b>
+                        <ul>
+                            <li>起送费￥20</li>
+                            <li>配送费￥5</li>
+                            <li>预计30min送达</li>
+                        </ul>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="box1">
+                <dl>
+                    <dt><img src="imgs/maikefei.jpg" alt=""></dt>
+                    <dd>
+                        <h3>麦咖啡（新中关店）</h3>
+                        <i>★★★★★</i>
+                        <b>月售147份</b>
+                        <ul>
+                            <li>起送费￥20</li>
+                            <li>配送费￥5</li>
+                            <li>预计30min送达</li>
+                        </ul>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="box1">
+                <dl>
+                    <dt><img src="imgs/siye.jpg" alt=""></dt>
+                    <dd>
+                        <h3>四爷牛拉中关村旗舰店</h3>
+                        <i>★★★★★</i>
+                        <b>月售147份</b>
+                        <ul>
+                            <li>起送费￥20</li>
+                            <li>配送费￥5</li>
+                            <li>预计30min送达</li>
+                        </ul>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="box1">
+                <dl>
+                    <dt><img src="imgs/gongfu.jpg" alt=""></dt>
+                    <dd>
+                        <h3>真功夫（新中关店）</h3>
+                        <i>★★★★★</i>
+                        <b>月售147份</b>
+                        <ul>
+                            <li>起送费￥20</li>
+                            <li>配送费￥5</li>
+                            <li>预计30min送达</li>
+                        </ul>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script>
+        $(function(){
+            $("li").click(function(){
+                $(this).addClass("hightlight").siblings().removeClass();
+            })
+        })
+    </script>
+</body>
+</html>

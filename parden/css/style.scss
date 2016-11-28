@@ -1,0 +1,104 @@
+@import "reset";
+.container{
+  width: 100%;
+  display:-webkit-flex;
+  flex-direction:column;
+  .header{
+    width: 100%;
+    height:37px;
+    background:#0E1218;
+    border-bottom:1px solid #64696D;
+    color:#fff;
+    display:-webkit-flex;
+    text-align: center;
+    line-height:37px;
+    a{
+      width:53.5px;
+      color:#fff;
+      font-size:12px;
+    }
+    h3{
+      flex:1;
+      text-align: center;
+      font-size:15px;
+    }
+    img{
+      width:18px;
+      height:5px;
+      margin-right:12px;
+      margin-top:15px;
+    }
+  }
+  .top{
+    width: 100%;
+    height:77px;
+    background:#F5F7F6;
+    dl{
+      margin-top:20px;
+      margin-left:18px;
+      dt{
+        float:left;
+        img{
+          width:36px;
+
+        }
+      }
+
+      dd{
+        width:161px;
+        height:36px;
+        background:url("../imgs/chat.jpg");
+        background-size:100% 100%;
+        float: left;
+        font-size:12px;
+        line-height:36px;
+        text-align:center;
+      }
+    }
+  }
+  .content{
+    width: 100%;
+    p{
+      width: 100%;
+      height:35px;
+      background:#fff;
+      border-bottom:1px solid #F4F6F5;
+      line-height:35px;
+      padding-left:15px;
+      clear: both;
+      span{
+        float: left;
+        width:70px;
+        font-size:11px;
+        color:#799096;
+      }
+      input{
+        height:100%;
+        font-size:12px;
+        color:#000;
+        float: left;
+        line-height:100%;
+      }
+    }
+    .send{
+      width: 100%;
+      margin-top:34px;
+     /* display:-webkit-flex;
+      justify-content: center;*/
+      .btn{
+
+        width: 286px;
+        height:35px;
+        margin:0 auto;
+        display:block;
+        background:#6970FF;
+        color:#fff;
+        line-height:35px;
+        text-align: center;
+        border-radius: 5px;
+        font-size:11px;
+      }
+    }
+
+  }
+}

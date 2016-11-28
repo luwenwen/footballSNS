@@ -1,0 +1,316 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-backface-visibility: hidden; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table th, table td {
+    vertical-align: top; }
+
+fieldset, img {
+  border: 0; }
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+em, strong, b, i {
+  font-style: normal;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+body, input, button, textarea {
+  font-family: sans-serif,Helvetica; }
+
+input {
+  border: none; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+a:hover {
+  cursor: pointer; }
+
+html, body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  color: #333;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  position: relative;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden; }
+
+ul, ol {
+  list-style-type: none; }
+  ul li, ol li {
+    list-style: none; }
+
+a, input, textarea, select {
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 100%; }
+
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+  a:active {
+    color: #1a1a1a; }
+
+::-webkit-input-placeholder {
+  color: #cacaca; }
+
+input:-moz-placeholder {
+  color: #cacaca; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  flex-direction: column; }
+  .container .header {
+    width: 100%;
+    height: 37px;
+    background: #0E1218;
+    border-bottom: 1px solid #64696D;
+    color: #fff;
+    display: -webkit-flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 37px; }
+    .container .header a {
+      width: 53.5px;
+      color: #fff;
+      font-size: 12px; }
+    .container .header strong {
+      flex: 1;
+      font-size: 15px; }
+    .container .header img {
+      width: 18.5px;
+      height: 4.5px;
+      margin-top: 15px;
+      margin-right: 12px; }
+  .container .nav {
+    width: 100%;
+    height: 82.5px;
+    border-top: 1px solid #F5F7F6;
+    border-bottom: 1px solid #F5F7F6; }
+    .container .nav .box {
+      height: 46px;
+      border: 1px solid #F5F7F6;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      /*涓婁笅灞呬腑*/ }
+      .container .nav .box .hot_setMenu {
+        height: 46px;
+        width: 158.5px;
+        text-align: center;
+        line-height: 46px;
+        font-size: 12px;
+        flex: 1; }
+        .container .nav .box .hot_setMenu a {
+          background: url("../imgs/hot.jpg") no-repeat left;
+          background-size: 16.5px 17px;
+          padding-left: 22px;
+          color: #676FFE; }
+      .container .nav .box .icon {
+        height: 24px;
+        overflow: hidden; }
+      .container .nav .box .hot_restaurant {
+        height: 46px;
+        width: 158.5px;
+        text-align: center;
+        line-height: 46px;
+        font-size: 12px;
+        flex: 1; }
+        .container .nav .box .hot_restaurant a {
+          background: url("../imgs/hot2.jpg") no-repeat left;
+          background-size: 16.5px 17px;
+          padding-left: 22px;
+          color: #6E8188; }
+    .container .nav .box2 {
+      width: 100%;
+      height: 35px;
+      display: -webkit-flex;
+      align-items: center; }
+      .container .nav .box2 .one {
+        width: 100%;
+        display: -webkit-flex;
+        justify-content: center; }
+        .container .nav .box2 .one li {
+          width: 25%;
+          text-align: center;
+          border-right: 1px solid #6E8188;
+          font-size: 10px; }
+        .container .nav .box2 .one #none {
+          border: 0; }
+        .container .nav .box2 .one .hightlight {
+          color: #555DFE; }
+      .container .nav .box2 .two {
+        width: 100%;
+        display: -webkit-flex;
+        justify-content: center;
+        display: none; }
+        .container .nav .box2 .two li {
+          width: 20%;
+          text-align: center;
+          border-right: 1px solid #6E8188;
+          font-size: 10px;
+          float: left; }
+        .container .nav .box2 .two #none {
+          border: 0; }
+        .container .nav .box2 .two .hightlight {
+          color: #555DFE; }
+  .container .content1 {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto; }
+    .container .content1 .box1 {
+      width: 100%;
+      height: 85px;
+      padding-top: 16.5px;
+      border-bottom: 1px solid #F6F8F7;
+      overflow: hidden; }
+      .container .content1 .box1 dl {
+        width: 90%;
+        margin: 0 20px;
+        display: -webkit-flex;
+        position: relative;
+        font-size: 10px; }
+        .container .content1 .box1 dl dt {
+          margin-right: 17px; }
+          .container .content1 .box1 dl dt img {
+            width: 52px;
+            height: 52px; }
+        .container .content1 .box1 dl h3 {
+          font-size: 15px; }
+        .container .content1 .box1 dl span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 12px;
+          color: orange; }
+        .container .content1 .box1 dl b {
+          color: #555DFE;
+          line-height: 29px; }
+        .container .content1 .box1 dl ul {
+          display: -webkit-flex; }
+          .container .content1 .box1 dl ul li {
+            padding-right: 15px; }
+        .container .content1 .box1 dl p {
+          color: #92A5AC;
+          line-height: 17px;
+          padding-top: 10px; }
+      .container .content1 .box1 .buy {
+        width: 90%;
+        height: 40px;
+        margin: 10px auto 0;
+        border-top: 1px solid #F6F8F7;
+        padding-top: 6px; }
+        .container .content1 .box1 .buy .num {
+          float: left;
+          margin-top: 9px; }
+          .container .content1 .box1 .buy .num span {
+            width: 19px;
+            display: inline-block;
+            border-radius: 9.5px;
+            background: blue;
+            color: #fff;
+            text-align: center;
+            line-height: 19px; }
+        .container .content1 .box1 .buy a {
+          float: right;
+          width: 86px;
+          height: 35px;
+          background: #6970FF;
+          border-radius: 3px;
+          text-align: center;
+          line-height: 35px;
+          color: #fff;
+          font-size: 12px; }
+  .container .content2 {
+    display: none;
+    width: 100%;
+    flex: 1;
+    overflow-y: auto; }
+    .container .content2 .box1 {
+      width: 100%;
+      height: 85px;
+      padding-top: 16.5px;
+      border-bottom: 1px solid #F6F8F7;
+      overflow: hidden; }
+      .container .content2 .box1 dl {
+        width: 95%;
+        margin: 0 15px;
+        display: -webkit-flex;
+        position: relative;
+        font-size: 10px; }
+        .container .content2 .box1 dl dt {
+          margin-right: 11px; }
+          .container .content2 .box1 dl dt img {
+            width: 74px;
+            height: 49px; }
+        .container .content2 .box1 dl h3 {
+          font-size: 15px; }
+        .container .content2 .box1 dl i {
+          color: #F1D11E; }
+        .container .content2 .box1 dl b {
+          line-height: 29px; }
+        .container .content2 .box1 dl ul {
+          display: -webkit-flex; }
+          .container .content2 .box1 dl ul li {
+            padding-right: 7px; }
+      .container .content2 .box1 .buy {
+        width: 90%;
+        height: 40px;
+        margin: 10px auto 0;
+        border-top: 1px solid #F6F8F7;
+        padding-top: 6px; }
+        .container .content2 .box1 .buy .num {
+          float: left;
+          margin-top: 9px; }
+          .container .content2 .box1 .buy .num span {
+            width: 19px;
+            display: inline-block;
+            border-radius: 9.5px;
+            background: blue;
+            color: #fff;
+            text-align: center;
+            line-height: 19px; }
+        .container .content2 .box1 .buy a {
+          float: right;
+          width: 86px;
+          height: 35px;
+          background: #6970FF;
+          border-radius: 3px;
+          text-align: center;
+          line-height: 35px;
+          color: #fff;
+          font-size: 12px; }
+
+/*# sourceMappingURL=index_4.css.map */
